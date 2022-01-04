@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="popup.js" type="module"></script>
+    <style>
+        body {
+            padding: 5px 5px 5px 5px;
+            width: 275px;
+            font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+            color: red;
+            font-size: 12px;
+        }
+
+        input,
+        button {
+            width: 275px;
+            margin-bottom: 5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="control-row">
+        <label for="input" id="inputlabel">Source URL:</label>
+        <input type="text" id="input" disabled>
+        <br>
+        <button id="go">Copy to localhost</button>
+    </form>
+    <span id="message" hidden></span>
+</body>
+
+</html>

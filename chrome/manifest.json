@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Propagate MyCustomCookie to localhost",
+  "version": "1.0",
+
+  "action": {
+    "default_title": "Propagate MyCustomCookie to localhost",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icon16.png",
+      "24": "/images/icon24.png",
+      "32": "/images/icon32.png"
+    }
+  },
+  "description": "Propagate MyCustomCookie cookie to localhost",
+  "icons": {
+    "16": "/images/icon16.png",
+    "48": "/images/icon48.png",
+    "128": "/images/icon128.png"
+  },
+  "homepage_url": "https://github.com/matei-tm-csv/cookie-sync-to-local",
+  "permissions": ["storage","cookies", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"]
+}
