@@ -64,7 +64,7 @@ async function copyDomainCookie(url) {
       return `No ${cookieName} cookie found`;
     }
 
-    copyCookieToLocalhost(trackedCookie);
+    await copyCookieToLocalhost(trackedCookie);
   } catch (error) {
     return `Unexpected error: ${error.message}`;
   }
@@ -73,13 +73,11 @@ async function copyDomainCookie(url) {
 }
 
 function copyCookieToLocalhost(cookie) {
-  chrome.cookies.set({
+  return chrome.cookies.set({
     url: "http://localhost",
     name: cookie.name,
     value: cookie.value
   });
-
-  return cookie.name;
 }
 
 
