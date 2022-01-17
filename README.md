@@ -25,3 +25,7 @@ Load the extension using "Load unpacked"
 
 If you need to restrict the list of candidate urls place the filtered values in manifest.json. 
 Edit the file and set the "host_permissions" property
+
+# Credits
+
+Based on Chrome extensions sample https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/api/cookies/cookie-clearer by [dotproto](https://github.com/dotproto)
